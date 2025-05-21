@@ -4,6 +4,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./font.nix
     ];
 
   # Bootloader.
@@ -82,6 +83,7 @@
     eza
     bat
     helix
+    waybar
     alacritty
     rofi-wayland
   ];

@@ -8,7 +8,6 @@ configuration {
 	sidebar-mode: 					false;
 }
 
-@import "colors.rasi"
 * {
   al:  #00000000;
   bg:  #141b1eff;
