@@ -4,6 +4,7 @@
   imports = [
     ./helix.nix
     ./sh.nix
+    ./rofi/rofi.nix
   ];
 
   home.username = "abhi";
@@ -13,9 +14,6 @@
 
   home.packages = [
   ];
-
-  home.file = {
-  };
 
   home.sessionVariables = {
   };
