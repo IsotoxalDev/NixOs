@@ -71,8 +71,16 @@
     xwayland.enable = true;
   };
 
+  # Defaulting to zsh
+  environment.shells = with pkgs; [zsh];
+  users.defaultUserShell = pkgs.zsh;
+  programs.zsh.enable = true;
+
+  # System packages
   environment.systemPackages = with pkgs; [
     git
+    eza
+    bat
     helix
     alacritty
     rofi-wayland
