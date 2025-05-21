@@ -23,9 +23,8 @@
     };
     homeConfigurations = {
       abhi = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
+        inherit pkgs lib;
         modules = [ ./home.nix ];
-        extraSpecialArgs = { inherit lib; };
       };
     };
   };
