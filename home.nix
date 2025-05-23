@@ -31,12 +31,6 @@
     };
   };
 
-  #qt = {
-  #  enable = true;
-  #  platformTheme = "gnome";
-  #  style = "adwaita-dark";
-  #};
-
   home.username = "abhi";
   home.homeDirectory = "/home/abhi";
 
@@ -46,6 +40,7 @@
     mpv
     vlc
     motrix
+    feh
     godot_4
     inkscape
     pavucontrol
