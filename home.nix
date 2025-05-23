@@ -8,6 +8,35 @@
     ./alacritty.nix
   ];
 
+  programs.git = {
+    enable = true;
+    userName = "Abhinav Kuruvila Joseph";
+    userEmail = "62714538+IsotoxalDev@users.noreply.github.com";
+  };
+
+  dconf.settings = {
+    "org/gnome/desktop/background" = {
+      picture-uri-dark = "file://${pkgs.nixos-artwork.wallpapers.nineish-dark-gray.src}";
+    };
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+    };
+  };
+
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Adwaita-dark";
+      package = pkgs.gnome.gnome-themes-extra;
+    };
+  };
+
+  #qt = {
+  #  enable = true;
+  #  platformTheme = "gnome";
+  #  style = "adwaita-dark";
+  #};
+
   home.username = "abhi";
   home.homeDirectory = "/home/abhi";
 
