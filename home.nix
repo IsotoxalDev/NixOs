@@ -46,6 +46,7 @@
     godot_4
     inkscape
     pavucontrol
+    obs-studio
   ];
 
   home.sessionVariables = {
