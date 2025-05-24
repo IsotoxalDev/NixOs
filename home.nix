@@ -42,6 +42,7 @@
     mpv
     vlc
     motrix
+    wayvnc
     feh
     godot_4
     inkscape
