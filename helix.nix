@@ -14,5 +14,9 @@
         whitespace.render.newline = "all";
       };
     };
+    extraPackages = with pkgs; [
+      svelte-language-server
+      vscode-langservers-extracted
+    ];
   };
 }
