@@ -5,8 +5,8 @@
     noto-fonts-cjk-sans
     noto-fonts-emoji
     fantasque-sans-mono
-    (nerdfonts.override { fonts = [ "Iosevka" ]; })
-    iosevka
+    #(nerdfonts.override { fonts = [ "Iosevka" ]; })
+    nerd-fonts.iosevka
     font-awesome
   ];
 }

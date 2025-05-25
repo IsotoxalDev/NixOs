@@ -41,6 +41,7 @@
   home.packages = with pkgs; [
     mpv
     vlc
+    fd
     motrix
     wayvnc
     feh
@@ -48,6 +49,7 @@
     inkscape
     pavucontrol
     obs-studio
+    telegram-desktop
   ];
 
   home.sessionVariables = {

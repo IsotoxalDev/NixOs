@@ -99,6 +99,7 @@
     eza
     bat
     helix
+    dunst
     waybar
     alacritty
     rofi-wayland
