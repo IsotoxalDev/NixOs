@@ -16,6 +16,8 @@
     };
     extraPackages = with pkgs; [
       svelte-language-server
+      rust-analyzer
+      typescript-language-server
       vscode-langservers-extracted
     ];
   };
