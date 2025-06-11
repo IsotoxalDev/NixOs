@@ -30,6 +30,12 @@
     powerOnBoot = true;
   };
 
+  # Enable Opengl
+  hardware.opengl = {
+    enable = true;
+    # driSupport = true;
+    driSupport32Bit = true;
+  };
 
   # Sound
     security.rtkit.enable = true;
@@ -61,6 +67,14 @@
 
   # Enable Flakes
   nix.settings.experimental-features = [ "nix-command" "flakes"];
+
+  # Enable printing
+  services.printing.enable = true;
+  services.avahi = {
+  enable = true;
+  nssmdns4 = true;
+  openFirewall = true;
+};
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -98,6 +112,7 @@
     git
     eza
     bat
+    xplr
     helix
     dunst
     waybar

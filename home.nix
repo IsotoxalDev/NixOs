@@ -46,7 +46,9 @@
     wayvnc
     feh
     godot_4
+    gimp
     inkscape
+    kdePackages.kdenlive
     pavucontrol
     obs-studio
     telegram-desktop
