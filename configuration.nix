@@ -31,10 +31,9 @@
   };
 
   # Enable Opengl
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
-    # driSupport = true;
-    driSupport32Bit = true;
+    enable32Bit = true;
   };
 
   # Sound
@@ -71,10 +70,15 @@
   # Enable printing
   services.printing.enable = true;
   services.avahi = {
-  enable = true;
-  nssmdns4 = true;
-  openFirewall = true;
-};
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+  };
+
+  # Gaming
+  programs.steam.enable = true;
+  programs.steam.gamescopeSession.enable = true;
+  programs.gamemode.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -90,6 +94,7 @@
     packages = with pkgs; [
       firefox
       blueman
+      mangohud
     ];
   };
 
@@ -114,6 +119,11 @@
     bat
     xplr
     helix
+    wine
+    wine64
+    wineWowPackages.waylandFull
+    wine-wayland
+    winetricks
     dunst
     waybar
     alacritty
