@@ -46,10 +46,12 @@
     wayvnc
     feh
     godot_4
+    immich
     gimp
     lutris
     grim
     slurp
+    syncthing
     trelby
     inkscape
     kdePackages.kdenlive
