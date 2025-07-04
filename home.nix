@@ -52,13 +52,13 @@
     grim
     slurp
     syncthing
-    trelby
     inkscape
     kdePackages.kdenlive
     pavucontrol
     protonup
     obs-studio
     telegram-desktop
+    zathura
   ];
 
   home.sessionVariables = {
