@@ -19,6 +19,7 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Disable firewall
+  nixpkgs.config.allowUnfree = true;
   networking.firewall.enable = false;
 
   # Enable networking
@@ -75,11 +76,6 @@
     openFirewall = true;
   };
 
-  # Immich
-  services.immich.enable = true;
-  services.immich.port = 2283;
-  services.immich.host = "0.0.0.0";
-
   # Gaming
   programs.steam.enable = true;
   programs.steam.gamescopeSession.enable = true;
@@ -131,6 +127,7 @@
     winetricks
     dunst
     waybar
+    wl-clipboard
     alacritty
     rofi-wayland
   ];

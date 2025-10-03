@@ -8,6 +8,8 @@
     ./alacritty.nix
   ];
 
+  nixpkgs.config.allowUnfree = true;
+
   programs.git = {
     enable = true;
     userName = "Abhinav Kuruvila Joseph";
@@ -36,7 +38,6 @@
 
   home.stateVersion = "24.11";
 
-  nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
     mpv
@@ -47,10 +48,21 @@
     feh
     godot_4
     immich
+    blender
     gimp
     lutris
     grim
     slurp
+    trelby
+    chromium
+    arduino-ide
+    vscode
+    onlyoffice-desktopeditors
+    virtualbox
+    starc
+    openrocket
+    rpi-imager
+    audacity
     syncthing
     inkscape
     kdePackages.kdenlive
